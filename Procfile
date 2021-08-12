@@ -1,1 +1,1 @@
-worker: python Anarchist_Bot.py
+worker: python Queen_Bot.py
