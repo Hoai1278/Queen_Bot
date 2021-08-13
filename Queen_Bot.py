@@ -15,7 +15,7 @@ async def on_ready():
     ConsoleChannel = client.get_channel(856882963107282967)
     await ConsoleChannel.send("{0.user} ready to serve the kingdom.".format(client))
     global DMChannel
-    DMChannel = client.get_channel(872522936165228574)
+    DMChannel = client.get_channel(875548856471928873)
 
 @client.event
 async def on_message(message):
