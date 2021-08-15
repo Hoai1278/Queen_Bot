@@ -7,6 +7,12 @@ import math
 import datetime
 import time
 
+#########################
+#########################
+####Francesc is evil.####
+#########################
+#########################
+
 client = commands.Bot(command_prefix = "Mi ")
 
 @client.event
