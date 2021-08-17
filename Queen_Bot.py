@@ -90,11 +90,11 @@ async def kill(ctx,*,user : discord.Member):
                 "{0} roasted {1} to death."]
     pick = random.choice(response)
     if ctx.author == user:
-        if user != "Mein Zaun!":
-            await ctx.send(" {} comitted suicide".format(ctx.author.mention)) 
+        if str(user) != "Mein Zaun!#0378":
+            await ctx.send("{} comitted suicide".format(ctx.author.mention)) 
         else:
             await ctx.send("The king is dead, he comitted suicide!")
-    elif user == "Mein Zaun!":
+    elif str(user) == "Mein Zaun!#0378":
         await ctx.send("You can't kill the king, dumbass!")
     elif ctx.author != user:
             await ctx.send(pick.format(ctx.author.mention,user.mention))   
