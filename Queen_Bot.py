@@ -85,7 +85,7 @@ async def ask(ctx,*,question):
     else:
         await ctx.reply("question must have \"?\"")
 @client.command()
-async def kill(ctx,user : discord.Member):
+async def kill(ctx,*,user : discord.Member):
     response = ["{0} stabbed {1} to death.","{0} drowned {1} to death.","{0} shot {1} in the head.","{0} fucked {1} to death.","{1} died from laughing to death","{1} masturbated to death","{1} fell down from the bed to death","{0} pushed {1} from a building to death","{1} died from drugs overused",
                 "{0} roasted {1} to death."]
     pick = random.choice(response)
@@ -93,7 +93,7 @@ async def kill(ctx,user : discord.Member):
             await ctx.send(pick.format(ctx.author.mention,user.mention))
     elif ctx.author == user:
         await ctx.send(" {} comitted suicide".format(ctx.author.mention))    
-    elif user == "<@!364352649883025408>":
+    elif user == "Mein Zaun!":
         await ctx.send("You can't kill the king, dumbass!")
 
 @client.command()
