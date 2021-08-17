@@ -93,7 +93,7 @@ async def kill(ctx,user : discord.Member):
             await ctx.send(pick.format(ctx.author.mention,user.mention))
     elif ctx.author == user:
         await ctx.send(" {} comitted suicide".format(ctx.author.mention))    
-    elif user == "<@364352649883025408>":
+    elif user == "<@!364352649883025408>":
         await ctx.send("You can't kill the king, dumbass!")
 
 @client.command()
