@@ -155,6 +155,6 @@ async def unmute(ctx,user : discord.Member):
         await user.send("You have been unmute in server {}".format(ctx.guild.name))
     else:
         await ctx.send("You're not the Administrator!")
-
-TOKEN1 = "ODc1NDA1ODU3NDE0ODY0ODk2.YRVDPA.7MrFbQgqLD7iZBLqCyotO_k1Ehc"
-client.run(TOKEN1)
+def main():
+    TOKEN1 = "ODc1NDA1ODU3NDE0ODY0ODk2.YRVDPA.7MrFbQgqLD7iZBLqCyotO_k1Ehc"
+    client.run(TOKEN1)

@@ -1,1 +1,1 @@
-worker: python Queen_Bot.py
+worker: python run_Queen_Bot.py
