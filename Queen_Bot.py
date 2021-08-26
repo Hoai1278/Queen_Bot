@@ -157,5 +157,13 @@ async def unmute(ctx,user : discord.Member):
         await user.send("You have been unmute in server {}".format(ctx.guild.name))
     else:
         await ctx.send("You're not the Administrator!")
+
+@client.command()
+async def shutdown(ctx):
+  if ctx.author.id == 557878180518821903:
+    await ctx.send("Good bye")
+    await asyncio.sleep(2)
+    quit()
+
 def main(TOKEN):
     client.run(TOKEN)
